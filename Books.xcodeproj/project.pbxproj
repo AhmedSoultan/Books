@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXContainerItemProxy section */
+		171685632F9EAA6A0038CA6D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 17CE73332F828B8D00C58E8C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17CE733A2F828B8D00C58E8C;
+			remoteInfo = Books;
+		};
 		17CE73492F828B8F00C58E8C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 17CE73332F828B8D00C58E8C /* Project object */;
@@ -24,12 +31,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1716855D2F9EAA6A0038CA6D /* BooksUITest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BooksUITest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		17CE733B2F828B8D00C58E8C /* Books.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Books.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17CE73482F828B8F00C58E8C /* BooksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BooksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		17CE73522F828B8F00C58E8C /* BooksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BooksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		1716855E2F9EAA6A0038CA6D /* BooksUITest */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = BooksUITest;
+			sourceTree = "<group>";
+		};
 		17CE733D2F828B8D00C58E8C /* Books */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = Books;
@@ -40,14 +53,16 @@
 			path = BooksTests;
 			sourceTree = "<group>";
 		};
-		17CE73552F828B8F00C58E8C /* BooksUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = BooksUITests;
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1716855A2F9EAA6A0038CA6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		17CE73382F828B8D00C58E8C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -77,7 +92,7 @@
 			children = (
 				17CE733D2F828B8D00C58E8C /* Books */,
 				17CE734B2F828B8F00C58E8C /* BooksTests */,
-				17CE73552F828B8F00C58E8C /* BooksUITests */,
+				1716855E2F9EAA6A0038CA6D /* BooksUITest */,
 				17CE733C2F828B8D00C58E8C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,6 +103,7 @@
 				17CE733B2F828B8D00C58E8C /* Books.app */,
 				17CE73482F828B8F00C58E8C /* BooksTests.xctest */,
 				17CE73522F828B8F00C58E8C /* BooksUITests.xctest */,
+				1716855D2F9EAA6A0038CA6D /* BooksUITest.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,6 +111,29 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		1716855C2F9EAA6A0038CA6D /* BooksUITest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 171685652F9EAA6A0038CA6D /* Build configuration list for PBXNativeTarget "BooksUITest" */;
+			buildPhases = (
+				171685592F9EAA6A0038CA6D /* Sources */,
+				1716855A2F9EAA6A0038CA6D /* Frameworks */,
+				1716855B2F9EAA6A0038CA6D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				171685642F9EAA6A0038CA6D /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				1716855E2F9EAA6A0038CA6D /* BooksUITest */,
+			);
+			name = BooksUITest;
+			packageProductDependencies = (
+			);
+			productName = BooksUITest;
+			productReference = 1716855D2F9EAA6A0038CA6D /* BooksUITest.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		17CE733A2F828B8D00C58E8C /* Books */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 17CE735C2F828B8F00C58E8C /* Build configuration list for PBXNativeTarget "Books" */;
@@ -153,9 +192,6 @@
 			dependencies = (
 				17CE73542F828B8F00C58E8C /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				17CE73552F828B8F00C58E8C /* BooksUITests */,
-			);
 			name = BooksUITests;
 			packageProductDependencies = (
 			);
@@ -173,6 +209,10 @@
 				LastSwiftUpdateCheck = 2630;
 				LastUpgradeCheck = 2630;
 				TargetAttributes = {
+					1716855C2F9EAA6A0038CA6D = {
+						CreatedOnToolsVersion = 26.3;
+						TestTargetID = 17CE733A2F828B8D00C58E8C;
+					};
 					17CE733A2F828B8D00C58E8C = {
 						CreatedOnToolsVersion = 26.3;
 					};
@@ -203,11 +243,19 @@
 				17CE733A2F828B8D00C58E8C /* Books */,
 				17CE73472F828B8F00C58E8C /* BooksTests */,
 				17CE73512F828B8F00C58E8C /* BooksUITests */,
+				1716855C2F9EAA6A0038CA6D /* BooksUITest */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1716855B2F9EAA6A0038CA6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		17CE73392F828B8D00C58E8C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -232,6 +280,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		171685592F9EAA6A0038CA6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		17CE73372F828B8D00C58E8C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -256,6 +311,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		171685642F9EAA6A0038CA6D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 17CE733A2F828B8D00C58E8C /* Books */;
+			targetProxy = 171685632F9EAA6A0038CA6D /* PBXContainerItemProxy */;
+		};
 		17CE734A2F828B8F00C58E8C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 17CE733A2F828B8D00C58E8C /* Books */;
@@ -269,6 +329,46 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		171685662F9EAA6A0038CA6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KLSS3TR23H;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ahmedsultan.swiftui.BooksUITest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Books;
+			};
+			name = Debug;
+		};
+		171685672F9EAA6A0038CA6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KLSS3TR23H;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ahmedsultan.swiftui.BooksUITest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Books;
+			};
+			name = Release;
+		};
 		17CE735A2F828B8F00C58E8C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -541,6 +641,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		171685652F9EAA6A0038CA6D /* Build configuration list for PBXNativeTarget "BooksUITest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				171685662F9EAA6A0038CA6D /* Debug */,
+				171685672F9EAA6A0038CA6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		17CE73362F828B8D00C58E8C /* Build configuration list for PBXProject "Books" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
