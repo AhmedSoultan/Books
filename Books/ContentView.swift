@@ -26,8 +26,12 @@ struct ContentView: View {
       SecureField("Password", text: $password)
         .textFieldStyle(.roundedBorder)
       
-      Button("Log In") {
+      Button {
         isLoggedIn.toggle()
+      } label: {
+        Text("Log In")
+          .font(.title)
+          .foregroundStyle(.black)
       }
     }
     .padding()
