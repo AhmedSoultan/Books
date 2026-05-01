@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct BooksApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
+  var body: some Scene {
+    WindowGroup {
+      VStack {
+        ContentView()
+      }
     }
+  }
 }

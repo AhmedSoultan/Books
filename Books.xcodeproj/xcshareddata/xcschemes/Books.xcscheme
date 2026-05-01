@@ -30,7 +30,7 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <TestPlans>
          <TestPlanReference
-            reference = "container:BooksUITest/Books.xctestplan"
+            reference = "container:BooksTests/TestPlan.xctestplan"
             default = "YES">
          </TestPlanReference>
       </TestPlans>
@@ -40,7 +40,7 @@
             parallelizable = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "17CE73472F828B8F00C58E8C"
+               BlueprintIdentifier = "17232DBC2FA4A98D009A05A0"
                BuildableName = "BooksTests.xctest"
                BlueprintName = "BooksTests"
                ReferencedContainer = "container:Books.xcodeproj">
@@ -51,7 +51,7 @@
             parallelizable = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "17CE73512F828B8F00C58E8C"
+               BlueprintIdentifier = "17232DAD2FA4A96A009A05A0"
                BuildableName = "BooksUITests.xctest"
                BlueprintName = "BooksUITests"
                ReferencedContainer = "container:Books.xcodeproj">

@@ -8,17 +8,33 @@
 import SwiftUI
 
 struct ContentView: View {
-  var isLoggedIn: Bool = false
-    var body: some View {
-      if isLoggedIn {
-        Text("Welcome")
-      } else {
-        Button("Log In") {
-        }
+  @State private var isLoggedIn = false
+  @State private var email = ""
+  @State private var password = ""
+  
+  var body: some View {
+    VStack(spacing: 12) {
+      Text("Welcome")
+        .font(.largeTitle)
+        .foregroundStyle(.black)
+      
+      TextField("Email", text: $email)
+        .textFieldStyle(.roundedBorder)
+        .textInputAutocapitalization(.never)
+        .keyboardType(.emailAddress)
+      
+      SecureField("Password", text: $password)
+        .textFieldStyle(.roundedBorder)
+      
+      Button("Log In") {
+        isLoggedIn.toggle()
       }
     }
+    .padding()
+    .foregroundStyle(.black)
+  }
 }
 
 #Preview {
-    ContentView()
+  ContentView()
 }

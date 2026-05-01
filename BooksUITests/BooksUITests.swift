@@ -1,14 +1,13 @@
 //
-//  BooksUITest.swift
-//  BooksUITest
+//  BooksUITests.swift
+//  BooksUITests
 //
-//  Created by Ahmed Sultan on 26/04/2026.
+//  Created by Ahmed Sultan on 01/05/2026.
 //
 
 import XCTest
 
-final class BooksUITest: XCTestCase {
-
+final class BooksUITests: XCTestCase {
   override func setUpWithError() throws {
     continueAfterFailure = false
   }

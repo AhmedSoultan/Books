@@ -1,0 +1,31 @@
+{
+  "configurations" : [
+    {
+      "id" : "4D8E2227-D3DD-446D-A345-ED3107E12999",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "testTimeoutsEnabled" : true
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:Books.xcodeproj",
+        "identifier" : "17232DBC2FA4A98D009A05A0",
+        "name" : "BooksTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:Books.xcodeproj",
+        "identifier" : "17232DAD2FA4A96A009A05A0",
+        "name" : "BooksUITests"
+      }
+    }
+  ],
+  "version" : 1
+}
