@@ -24,10 +24,11 @@ platform :ios do
   )
   end
   
-  lane :tests do
+  lane :test do
   scan(
      devices: ["iPhone 17”],
-     scheme: "Books"
+     scheme: "Books",
+      clean: true
   )
   end
   
