@@ -26,9 +26,8 @@ platform :ios do
   
   lane :test do
   scan(
-     devices: "iPhone 17 Pro”,
-     scheme: "Books",
-      clean: true
+    scheme: "Books",
+    destination: "platform=iOS Simulator,name=iPhone 16,OS=18.6"
   )
   end
   
