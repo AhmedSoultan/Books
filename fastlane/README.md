@@ -39,6 +39,14 @@ Description of what the lane does
 
 
 
+### ios check_ci_secrets
+
+```sh
+[bundle exec] fastlane ios check_ci_secrets
+```
+
+Test GitHub secrets wiring
+
 ----
 
 This README.md is auto-generated and will be re-generated every time [_fastlane_](https://fastlane.tools) is run.
