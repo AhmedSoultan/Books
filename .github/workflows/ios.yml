@@ -23,9 +23,6 @@ jobs:
       
       - name: Install Ruby dependencies
         run: bundle install
-        
-      - name: Build simulator app
-        run: bundle exec fastlane ios build
       
       - name: Run tests
         run: bundle exec fastlane ios test
