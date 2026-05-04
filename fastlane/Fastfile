@@ -1,18 +1,3 @@
-# This file contains the fastlane.tools configuration
-# You can find the documentation at https://docs.fastlane.tools
-#
-# For a list of all available actions, check out
-#
-#     https://docs.fastlane.tools/actions
-#
-# For a list of all available plugins, check out
-#
-#     https://docs.fastlane.tools/plugins/available-plugins
-#
-
-# Uncomment the line if you want fastlane to automatically update itself
-# update_fastlane
-
 default_platform(:ios)
 
 platform :ios do
@@ -26,13 +11,21 @@ platform :ios do
   
   lane :test do
   scan(
-     devices: ["iPhone 17”],
-     scheme: "Books",
-      clean: true
+    scheme: "Books",
+    destination: "platform=iOS Simulator,name=iPhone 16,OS=26.2",
+    clean: true
   )
   end
   
   lane :screenshots do
-  capture_screenshots
+     capture_screenshots
+  end
+  
+  desc "Test GitHub secrets wiring"
+  lane :check_ci_secrets do
+    UI.user_error!("MATCH_PASSWORD is missing") if ENV["MATCH_PASSWORD"].to_s.empty?
+    UI.user_error!("FASTLANE_USER is missing") if ENV["FASTLANE_USER"].to_s.empty?
+
+    UI.success("GitHub secrets are available to Fastlane")
   end
 end
